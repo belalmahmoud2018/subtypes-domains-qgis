@@ -1,0 +1,59 @@
+0.2.8
+- Integer range domains with up to 100 values (e.g. 1 to 5) appear as a drop-down list of the numbers.
+- A field can now use a coded domain for one subtype and a range for another (both as lists).
+
+0.2.7
+- Fixed: editing an integer range domain failed ('1.0' was rejected as not an integer).
+- A range domain linked to a specific subtype now shows a number spin box; the exact range per subtype is checked on save.
+- Rejected values now show which values are allowed for which subtype.
+
+0.2.6
+- A domain set for one subtype now appears only for that subtype (other subtypes get the 'All subtypes' domain, or no list).
+- A new feature with no subtype chosen yet uses the default subtype's list.
+
+0.2.5
+- Tells exactly why a field is missing: virtual field, unsaved edits or edit mode.
+- A field saved while the layer is still in edit mode is now picked up.
+
+0.2.4
+- A field added in QGIS is now seen by the plugin right away (File Geodatabase kept it hidden until QGIS reopened the file).
+- "Refresh fields" button; warning when a field exists in QGIS but its edits are not saved yet.
+- The rule "Field" list is rebuilt when the subtype field changes and is never silently empty.
+- Domain value changes are picked up by already-loaded layers.
+
+0.2.3
+- Rules can no longer target the subtype field itself; the dialog explains what each rule column means.
+
+0.2.2
+- Diagnostics... button: one report with versions, stored setup, project layers and what QGIS stored.
+- After installing a new version over an old one, the old code is no longer mixed in.
+- Errors of the automatic apply are written to View > Panels > Log Messages ("Subtypes and Domains").
+- The plugin version is shown in the window title.
+
+0.2.1
+- Subtype-dependent default values also work when the field comes before the subtype field in the table.
+
+0.2.0
+- Automatic apply: the setup follows the layers whenever they are loaded or a project is opened
+  (File Geodatabase has no place to store a style, so it was lost on reload before).
+- Saving subtypes/domains applies them to the loaded layers immediately.
+- Domain lists in the form are never empty: with no subtype chosen (or a subtype without its own
+  rule) the values of the domains used by the field are offered.
+- Tested end to end on QGIS 3.34 / GDAL 3.8 with GeoPackage, SpatiaLite and File Geodatabase.
+
+0.1.2
+- Apply report now shows the matched layer source and what was configured per field.
+- Layers loaded with the SpatiaLite provider are recognised (no duplicate layer).
+- Unexpected errors are shown in a window instead of failing silently.
+
+0.1.1
+- Subtype field list now shows integer and decimal fields with their detected type.
+- The dialog shows the raw field types read from the file (helps diagnosing).
+
+0.1.0
+- First release.
+- Coded value and range domains.
+- Subtypes with a domain and a default value per field and per subtype.
+- Apply to QGIS layers (widgets, constraints, default values); optional style saved in the file.
+- Validate existing data against the rules.
+- GeoPackage, SpatiaLite and File Geodatabase.
