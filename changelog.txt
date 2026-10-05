@@ -1,3 +1,7 @@
+0.2.9
+- QGIS 4 (Qt6) support enabled.
+- Stable release.
+
 0.2.8
 - Integer range domains with up to 100 values (e.g. 1 to 5) appear as a drop-down list of the numbers.
 - A field can now use a coded domain for one subtype and a range for another (both as lists).

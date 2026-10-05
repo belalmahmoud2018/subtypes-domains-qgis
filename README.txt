@@ -1,4 +1,4 @@
-Subtypes and Domains Manager (v0.2.8)
+Subtypes and Domains Manager (v0.2.9)
 
 Install: QGIS > Plugins > Manage and Install Plugins > Install from ZIP, then restart QGIS.
 Open:    Plugins > Subtypes and Domains Manager (or the toolbar icon).
@@ -19,6 +19,6 @@ Open:    Plugins > Subtypes and Domains Manager (or the toolbar icon).
 
 The definitions are stored in five small tables inside the file (sd_domains, sd_domain_values,
 sd_layers, sd_subtypes, sd_rules). They work in QGIS only; ArcGIS does not read them.
-File Geodatabase needs GDAL 3.6+ (QGIS 3.28+).
+File Geodatabase needs GDAL 3.6+ (QGIS 3.28+). Works with QGIS 3.22 and later, including QGIS 4.
 
 License: GNU GPL v2 (see LICENSE). Author: Belal Mahmoud Abdelmonem.
