@@ -1,7 +1,7 @@
-Subtypes and Domains Manager (v0.2.9)
+Subtypes and Domains Manager (v0.3.0)
 
 Install: QGIS > Plugins > Manage and Install Plugins > Install from ZIP, then restart QGIS.
-Open:    Plugins > Subtypes and Domains Manager (or the toolbar icon).
+Open:    Plugins menu, or the button on the plugin's own toolbar.
 
 1. Choose the storage format (GeoPackage, SpatiaLite, File Geodatabase) and open the file.
 2. Domains...             create coded value or range domains.

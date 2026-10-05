@@ -1,3 +1,6 @@
+0.3.0
+- The plugin has its own toolbar with its button, visible by default.
+
 0.2.9
 - QGIS 4 (Qt6) support enabled.
 - Stable release.
